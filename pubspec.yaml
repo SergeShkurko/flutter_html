@@ -1,6 +1,6 @@
 name: flutter_html_multiplatform
 description: A Flutter widget rendering static HTML and CSS as Flutter widgets.
-version: 2.2.0
+version: 2.3.0
 homepage: https://github.com/Sub6Resources/flutter_html
 
 environment:
@@ -47,3 +47,19 @@ dev_dependencies:
     sdk: flutter
 
 flutter:
+  plugin:
+    platforms:
+      android:
+        pluginClass: FlutterHtmlPlugin
+        package: com.sub6resources.flutter_html
+      ios:
+        pluginClass: FlutterHtmlPlugin
+      linux:
+        pluginClass: FlutterHtmlPlugin
+      macos:
+        pluginClass: FlutterHtmlPlugin
+      windows:
+        pluginClass: FlutterHtmlPlugin
+      web:
+        pluginClass: FlutterHtmlWeb
+        fileName: flutter_html_multiplatform_web.dart
