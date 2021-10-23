@@ -1,4 +1,4 @@
-import 'package:flutter_html/image_render.dart';
+import 'package:flutter_html_multiplatform/image_render.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:html/dom.dart' as dom;
 

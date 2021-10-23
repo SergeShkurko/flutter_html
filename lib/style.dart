@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_html/src/css_parser.dart';
+import 'package:flutter_html_multiplatform/flutter_html_multiplatform.dart';
+import 'package:flutter_html_multiplatform/src/css_parser.dart';
 
 ///This class represents all the available CSS attributes
 ///for this package.

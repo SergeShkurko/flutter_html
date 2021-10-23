@@ -1,3 +1,6 @@
+## [2.2.0] - October 23, 2021:
+* Expose library for multiplatform
+
 ## [2.1.5] - October 7, 2021:
 * Ignore unsupported custom style selectors when using fromCss
 * Fix SVG tag usage inside tables

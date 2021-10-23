@@ -4,15 +4,15 @@ import 'package:chewie/chewie.dart';
 import 'package:chewie_audio/chewie_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/src/anchor.dart';
-import 'package:flutter_html/src/html_elements.dart';
-import 'package:flutter_html/src/navigation_delegate.dart';
-import 'package:flutter_html/src/utils.dart';
-import 'package:flutter_html/src/widgets/iframe_unsupported.dart'
+import 'package:flutter_html_multiplatform/html_parser.dart';
+import 'package:flutter_html_multiplatform/src/anchor.dart';
+import 'package:flutter_html_multiplatform/src/html_elements.dart';
+import 'package:flutter_html_multiplatform/src/navigation_delegate.dart';
+import 'package:flutter_html_multiplatform/src/utils.dart';
+import 'package:flutter_html_multiplatform/src/widgets/iframe_unsupported.dart'
   if (dart.library.io) 'package:flutter_html/src/widgets/iframe_mobile.dart'
   if (dart.library.html) 'package:flutter_html/src/widgets/iframe_web.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html_multiplatform/style.dart';
 import 'package:flutter_math_fork/flutter_math.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:html/dom.dart' as dom;

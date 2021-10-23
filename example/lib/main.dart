@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
+import 'package:flutter_html_multiplatform/flutter_html_multiplatform.dart';
 
 void main() => runApp(new MyApp());
 
@@ -34,6 +34,10 @@ const htmlData = r"""
       <h4>Header 4</h4>
       <h5>Header 5</h5>
       <h6>Header 6</h6>
+      <h3>YouTube iframe:</h3>
+      <iframe height="500" src="https://google.com"></iframe>
+      <h3>Google iframe:</h3>
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
       <h3>Ruby Support:</h3>
       <p>
         <ruby>
@@ -251,6 +255,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Html(
           data: htmlData,
           tagsList: Html.tags..addAll(["bird", "flutter"]),
+          navigationDelegateForIframe: (NavigationRequest request) {
+            if (request.url.contains("google.com/images")) {
+              return NavigationDecision.prevent;
+            } else {
+              return NavigationDecision.navigate;
+            }
+          },
           style: {
             "table": Style(
               backgroundColor: Color.fromARGB(0x50, 0xee, 0xee, 0xee),
@@ -272,8 +283,7 @@ class _MyHomePageState extends State<MyHomePage> {
             "table": (context, child) {
               return SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
-                child:
-                    (context.tree as TableLayoutElement).toWidget(context),
+                child: (context.tree as TableLayoutElement).toWidget(context),
               );
             },
             "bird": (RenderContext context, Widget child) {
@@ -294,8 +304,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 (context, attributes, element) {
               return FlutterLogo(size: 36);
             },
-            networkSourceMatcher(domains: ["mydomain.com"]):
-                networkImageRender(
+            networkSourceMatcher(domains: ["mydomain.com"]): networkImageRender(
               headers: {"Custom-Header": "some-value"},
               altWidget: (alt) => Text(alt ?? ""),
               loadingWidget: () => Text("Loading..."),

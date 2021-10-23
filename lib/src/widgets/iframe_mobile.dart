@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/src/navigation_delegate.dart';
-import 'package:flutter_html/src/replaced_element.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html_multiplatform/html_parser.dart';
+import 'package:flutter_html_multiplatform/src/navigation_delegate.dart';
+import 'package:flutter_html_multiplatform/src/replaced_element.dart';
+import 'package:flutter_html_multiplatform/style.dart';
 import 'package:webview_flutter/webview_flutter.dart' as webview;
 import 'package:html/dom.dart' as dom;
 

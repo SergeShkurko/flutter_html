@@ -1,11 +1,11 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_html/html_parser.dart';
-import 'package:flutter_html/src/anchor.dart';
-import 'package:flutter_html/src/html_elements.dart';
-import 'package:flutter_html/src/styled_element.dart';
-import 'package:flutter_html/style.dart';
+import 'package:flutter_html_multiplatform/html_parser.dart';
+import 'package:flutter_html_multiplatform/src/anchor.dart';
+import 'package:flutter_html_multiplatform/src/html_elements.dart';
+import 'package:flutter_html_multiplatform/src/styled_element.dart';
+import 'package:flutter_html_multiplatform/style.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 import 'package:html/dom.dart' as dom;
 
